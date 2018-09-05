@@ -1,0 +1,51 @@
+{
+  "name": "ts-plugin-mst-async-action",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "repository": "git@github.com:newraina/ts-plugin-mst-async-action.git",
+  "author": "newraina <newraina@users.noreply.github.com>",
+  "license": "MIT",
+  "keywords": [
+    "Mobx",
+    "mobx-state-tree",
+    "TypeScript",
+    "plugin"
+  ],
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "prepare": "npm run build",
+    "test": "jest"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "jsxBracketSameLine": true
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/test/.|\\.(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.4",
+    "jest": "^23.5.0",
+    "mobx-state-tree": "^3.2.4",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {}
+}
