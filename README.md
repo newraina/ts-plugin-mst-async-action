@@ -1,6 +1,7 @@
 # ts-plugin-mst-async-action
 
 [![npm](https://img.shields.io/npm/v/ts-plugin-mst-async-action.svg)](https://www.npmjs.com/package/ts-plugin-mst-async-action)
+[![travis-ci](https://travis-ci.com/newraina/ts-plugin-mst-async-action.svg?branch=master)](https://travis-ci.com/newraina/ts-plugin-mst-async-action)
 
 Converts mobx-state-tree async actions to flows. inspired by [babel-plugin-mobx-async-action](https://github.com/Strate/babel-plugin-mobx-async-action)
 
