@@ -1,5 +1,5 @@
-import { flow, types } from 'mobx-state-tree'
-
+import { types } from 'mobx-state-tree'
+import { flow } from 'mobx-state-tree'
 const api = {
   getCount(...args: any[]) {
     return Promise.resolve(1)

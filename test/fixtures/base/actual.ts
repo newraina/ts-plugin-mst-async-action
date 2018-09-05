@@ -1,5 +1,4 @@
 import { types } from 'mobx-state-tree'
-
 const api = {
   getCount(...args: any[]) {
     return Promise.resolve(1)
