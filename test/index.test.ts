@@ -3,7 +3,7 @@ const fs = require('fs')
 const path = require('path')
 const prettier = require('prettier')
 
-const transformerFactory = require('../src').default
+const transformerFactory = require('../src')
 const transformer = transformerFactory()
 const printer = ts.createPrinter()
 const formatOption = { semi: false, parser: 'babylon', singleQuote: true }
