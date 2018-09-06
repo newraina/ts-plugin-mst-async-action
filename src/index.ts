@@ -11,7 +11,7 @@ const defaultOptions: Options = {
   mstPackage: 'mobx-state-tree'
 }
 
-export function createTransformer(_options: Partial<Options>) {
+function createTransformer(_options: Partial<Options>) {
   const options = { ...defaultOptions, ..._options }
   const mstPackageName = options.mstPackage
 
@@ -134,4 +134,4 @@ export function createTransformer(_options: Partial<Options>) {
   return transformer
 }
 
-export default createTransformer
+module.exports = createTransformer
