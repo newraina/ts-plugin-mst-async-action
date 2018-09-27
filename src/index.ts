@@ -22,7 +22,10 @@ function createTransformer(_options: Partial<Options>) {
       }
 
       if (ts.isImportDeclaration(node)) {
-        if (node.moduleSpecifier.getText() === `'${mstPackageName}'`) {
+        if (
+          node.moduleSpecifier.kind === ts.SyntaxKind.StringLiteral &&
+          (<ts.StringLiteral>node.moduleSpecifier).text === mstPackageName
+        ) {
           const flowImportDeclarationNode = ts.createImportDeclaration(
             undefined,
             undefined,
